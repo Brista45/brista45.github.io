@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelly SINCLAIR</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Barlow:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="kelly.css">
+</head>
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <a href="https://www.monacosuccessbook.com" target="_blank" class="logo-link">
+            <img src="OSEZ.jpg" alt="Logo OSEZ" class="logo">
+        </a>
+    </div>
+</header>
+
+<div class="container main-wrapper">
+    <div class="profile-section">
+        <div class="profile-image-container">
+            <div class="profile-placeholder">
+                <img src="PHOTO PROFIL OSEZ.jpg" alt="Photo de profil" class="profile-photo">
+            </div>
+        </div>
+        <div class="profile-info">
+            <h1 class="kelly-sinclair">Kelly SINCLAIR</h1>
+            <p class="role">Dirigeante associée de l’agence OSEZ &amp; co-fondatrice du magazine MONACO SUCCESS</p>
+        </div>
+    </div>
+
+    <main class="bio-content">
+        <div class="bio-intro">
+            <p>
+                Depuis 2020, Kelly Sinclair incarne une nouvelle forme de leadership, alliant exigence, vision stratégique et sensibilité artistique. Fondatrice de l’agence <strong>OSEZ Monaco</strong>, elle conçoit des stratégies globales de communication, de branding, d’identité visuelle et de gestion de personnalité, pour des clients locaux et internationaux, dans les univers du luxe, de la culture et de l’art.
+            </p>
+            <p>
+                Forte d’une expérience de près de dix ans dans des maisons prestigieuses telles que <strong>Christian Dior Couture</strong> où elle a occupé des fonctions en relations presse et publique, coordination de projets spéciaux et attachée de direction et événementiel, elle s’est formée sur le terrain, portée par une profonde curiosité, le goût du travail et un sens de l’engagement.
+            </p>
+            <p>
+                Tout au long de sa carrière, Kelly a su développer un véritable savoir-faire en <strong>co-brandings</strong>, au travers des événements ciblés et exclusifs, aussi bien pour la cible <strong>BtoB</strong> que la cible <strong>BtoC</strong>.
+            </p>
+            <p>
+                Son approche repose sur la conviction qu’une vision combinée à l’audace, la stratégie et l’exigence sont les piliers de la réussite. Elle accompagne les clients afin d'harmoniser leur image et leur positionnement, à affiner leur storytelling et leur communication globale, pour qu’ils incarnent pleinement ce qu’ils sont, ou ce qu’ils aspirent à devenir. Chaque décision et action devient un levier d’impact, pour développer ou asseoir leur notoriété.            </p>
+            <div class="motto-wrapper">
+                <div id="particles-js"></div>
+                <blockquote class="motto">« Osez, révélez votre potentiel »</blockquote>
+            </div>
+            <p>
+                Kelly propose des <strong>conférences</strong>, <strong>ateliers</strong> et <strong>programmes d'accompagnement</strong>,  qui vont bien au-delà de la simple transmission d’outils. Elle crée un espace où chacun peut s’exprimer, se transformer et trouver l’inspiration. Elle encourage les participants à prendre la parole, à prendre leur place et à faire de leur communication une extension authentique de leur vision et de leurs valeurs.
+
+            </p>
+            <p>
+                Visionnaire, elle fonde en parallèle le <strong>magazine Monaco Success</strong>, un support inédit entièrement dédié aux business leaders implantés à Monaco. Ce vecteur d’image puissant met en lumière les parcours, les talents et les success stories. Outre la mise en lumière d’un savoir-faire et la vocation inspirationnelle du magazine, il permet d’animer un réseau qualifié de professionnels, une passerelle entre les figures de la réussite d’aujourd’hui et celle de demain, dans un écosystème monégasque exigeant.
+            </p>
+            <p>
+                Si vous êtes prêt à faire rayonner votre message, à structurer votre image et à incarner un leadership aligné et affirmé, Kelly SINCLAIR se tient disponible pour échanger sur vos projets, vos ambitions, et sur la manière dont votre communication peut devenir le miroir de votre excellence.            </p>
+        </div>
+    </main>
+</div>
+
+<footer class="site-footer">
+    <div class="footer-content">
+        <p>Le Métropole MCBC Campus<br>
+        17 Avenue des Spélugues<br>
+        98000 Monaco<br>
+        +377 99 99 17 17<br>
+        ksinclair@osez.mc / +33 (0) 6 42 03 78 75</p>
+        <div class="social-icons">
+            <a href="https://www.osez.mc" target="_blank" aria-label="Site Internet">
+                <i class="fas fa-globe"></i>
+            </a>
+            <a href="https://www.instagram.com/osez.mc" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script>
+particlesJS("particles-js", {
+    particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#daa520" },
+        shape: { type: "circle", stroke: { width: 0, color: "#000000" } },
+        opacity: { value: 0.6, random: true, anim: { enable: false } },
+        size: { value: 3, random: true, anim: { enable: false } },
+        move: {
+            enable: true,
+            speed: 1,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            bounce: false
+        }
+    },
+    interactivity: {
+        detect_on: "canvas",
+        events: {
+            onhover: { enable: false },
+            onclick: { enable: false },
+            resize: true
+        }
+    },
+    retina_detect: true
+});
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const motto = document.querySelector('blockquote.motto');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                motto.classList.add('visible');
+                observer.unobserve(motto);
+            }
+        });
+    }, {
+        threshold: 0.5
+    });
+    if (motto) observer.observe(motto);
+});
+</script>
+
+</body>
+</html>
